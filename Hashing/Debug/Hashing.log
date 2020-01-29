@@ -1,0 +1,2 @@
+﻿  Source.cpp
+c:\users\s199041\source\repos\hashing\hashing\thashmap.h(29): error C4716: 'tHashmap<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,int>::operator[]': must return a value
