@@ -1,2 +1,13 @@
 ﻿  Source.cpp
-c:\users\s199041\source\repos\hashing\hashing\thashmap.h(29): error C4716: 'tHashmap<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,int>::operator[]': must return a value
+f:\assessment4-codedesign\hashing\hashing\source.cpp(26): warning C4267: '=': conversion from 'size_t' to 'unsigned char', possible loss of data
+f:\assessment4-codedesign\hashing\hashing\hash.h(10): error C2440: 'type cast': cannot convert from 'const T' to 'int'
+          with
+          [
+              T=std::string
+          ]
+  f:\assessment4-codedesign\hashing\hashing\hash.h(10): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  f:\assessment4-codedesign\hashing\hashing\source.cpp(27): note: see reference to function template instantiation 'size_t hash<std::string>(const T &)' being compiled
+          with
+          [
+              T=std::string
+          ]

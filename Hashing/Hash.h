@@ -7,21 +7,26 @@ using std::string;
 template<typename T>
 size_t hash(const T& val)
 {
-	
-	T::please_specialize_this_template_for_your_type;
-}
-
-template<typename T>
-size_t hash<T>(const T& val)
-{
 	return(int)val * 2654435761 % std::numeric_limits<size_t>::max();
 }
 
-//template<>
-//size_t hash<char>(const char& val)
+//template<typename T>
+//size_t hash<T>(const T& val)
 //{
 //	return(int)val * 2654435761 % std::numeric_limits<size_t>::max();
 //}
+
+template<>
+size_t hash<int>(const int& val)
+{
+	return val * 2654435761 % std::numeric_limits<size_t>::max();
+}
+
+template<>
+size_t hash<char>(const char& val)
+{
+	return(int)val * 2654435761 % std::numeric_limits<size_t>::max();
+}
 
 template<>
 size_t hash<string>(const string& val)
