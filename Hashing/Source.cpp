@@ -24,23 +24,31 @@ int main()
 
 	test = hash<int>(8);
 	yeah = hash<char>('H');
-	yup = hash<string>("Jahvier");
+	yup = hash<std::string>("Jahvier");
 
-	//ok = ok / 2654435761 % std::numeric_limits<size_t>::max();
-
-	/*cout << ok << endl;
+	cout << ok << endl;
 	cout << yeah << endl;
-	cout << yup << endl;*/
+	cout << yup << endl;
 
-	/*tHashmap<string, int> favoriteNumbersByName;
-	favoriteNumbersByName["Terry"] = 5;
+	tHashmap<std::string, int> favoriteNumbersByName;// = new tHashmap<std::string, int>();
+	favoriteNumbersByName["Terry"] = 675;
 
-	cout << favoriteNumbersByName["Terry"] << endl; // 5*/
+	cout << favoriteNumbersByName["Terry"] << endl; // 5
+
+	tHashmap<std::string, int> copyHashMap(favoriteNumbersByName);
+
+	cout << copyHashMap["Terry"] << endl; // 5
+
+	tHashmap<std::string, int> extraTest;
+
+	extraTest = favoriteNumbersByName;
+
+	cout << extraTest["Terry"] << endl; // 5
 
 
-	while (true)
-	{
 
-	}
+	//------------------------------------
+
+	while (true){}
 	return 0;
 }
